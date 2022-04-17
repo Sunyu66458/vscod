@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 函数作用域
+        /**
+         * 函数作用域
+         *      调用函数时创建函数作用域，函数执行完毕以后，函数作用域销毁
+         *      每调用一次函数就会创建一个新的函数作用域，他们之间是互相独立的
+         *      函数作用域可以访问到全局作用域的变量
+         *      在函数作用域中会优先寻找当前作用域中的变量，如果没有会返回上一级寻找
+         *      如果全局找不到会报错ReferenceError
+         *      如果想找全局的可以用window
+         * 如果函数作用域里的变量不用var声明这会变成全局的相当于window.变量
+         */
+        var a = 10;
+        function fun(){
+            var  a = 20;
+            var b = 20;
+            document.write(a+b);
+            function fun2(){
+                document.write(window.a);
+
+            }
+        }
+        fun();
+        document.write(b);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

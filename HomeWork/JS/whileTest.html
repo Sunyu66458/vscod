@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            年利率百分之五多少年 1000到5000块钱
+        */
+       var marry = 1000;
+       var num = 0;
+       while(marry <= 5000){
+
+            num++;
+            marry *= 1.05;
+            document.write("这是第"+num+"年");
+            document.write("今年的钱是：" + marry);
+            
+       }
+
+       var sum = 0;
+       var num = 0;
+       for(var i = 0;i < 100;i++){
+           if(i%7 == 0){
+               sum+=i;
+               num++;
+           }
+           
+       }
+     alert("和是 "+ sum + "位数是" + num);
+       
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

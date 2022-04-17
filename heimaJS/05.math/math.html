@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Math.PI // 圆周率
+        // Math.floor() // 向下取整
+        // Math.ceil() // 向上取整
+        // Math.round() // 四舍五入版 就近取整 注意 -3.5 结果是 -3 
+        // Math.abs() // 绝对值
+        // Math.max()/Math.min() // 求最大和最小值
+
+        console.log('圆周率是' + Math.PI);
+        console.log('向下取整' + Math.floor(2.5));
+        console.log('先上取整' + Math.ceil(2.5));
+        console.log('四舍五入' + Math.round(2.5));
+        console.log('绝对值' + Math.abs(-2));
+        console.log('最大值' + Math.max(2,5,6,7));
+
+        function maxNum(num){ //object类型的形参 需要转换为数组类型
+            var obj = num;  //定义对象
+            var arr = [];   //定义数组
+            for (var i in obj){     //for in 遍历obj对象里面的数据
+                arr.push(obj[i]);   //利用push方法把数据存入到数组里面
+            }
+            alert(arr[1]);
+            console.log('最大值' + Math.max(...arr));
+            console.log('最小值' + Math.min(...arr));
+        }
+
+        var num1 = [];
+
+        for(var i = 0; i < 10 ; i++){
+            num1[i] = Math.floor(Math.random() * 100 + 1)
+            console.log(num1[i]);
+        }
+
+        maxNum(num1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

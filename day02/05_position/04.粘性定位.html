@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航条</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        body{
+            height: 3000px;
+        }
+        .avn{
+            width: 1200px;
+            height: 50px;
+            margin:20px auto;
+            /* 粘滞定位 当元素的position设置为sticky时则开启了元素的粘滞定位
+                与相对定位基本一致 当元素到达某一位职时，则将其固定
+
+            */
+            position: sticky;
+            top: 0px;
+        }
+        .avn li{
+            float: left;
+            height: 50px;
+            line-height: 50px;
+            background-color: rgb(223, 217, 217);
+        }
+        .avn a{
+            display: block;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 0px 38px;
+            color: dimgrey;
+        }
+        .avn a:hover{
+            color: gainsboro;
+            background-color: rgb(172, 163, 163);
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="avn">
+        <ul>
+            <li><a href="#">HTML/CSS</a></li>
+            <li><a href="#">Browser Side</a></li>
+            <li><a href="#">Server Side</a></li>
+            <li><a href="#">Programming</a></li>
+            <li><a href="#">XML</a></li>
+            <li><a href="#">Web Buliding</a></li>
+            <li><a href="#">Reference</a></li>
+        </ul>
+    </div>
+</body>
+</html>

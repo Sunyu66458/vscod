@@ -1,0 +1,100 @@
+.topbar-nve{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333;
+}
+/* 设置超链接 的样式 */
+.topbar a{
+    display: block;
+    font-size: 12px;
+    color: rgb(206, 208, 209);
+}
+/* 设置鼠标移动到a上的样式 */
+.topbar a:hover{
+    /* background-color: azure; */
+    color: #FF6700;
+    
+}
+/* 设置导航栏棍棍的样式 */
+.topbar .line{
+    color: bisque;
+    margin: 0 8px;
+    margin-top: -2px;
+}
+/* 设置浮动 */
+.server , .topbar li{
+    float: left;
+}
+.shopcare,.user{
+    float: right;
+}
+/* 设置购物车的样式 */
+.shopcare{
+    margin-left: 26px;
+}
+/* 设置购物车的大小的样式 */
+.shopcare a{
+    width: 120px;
+    background-color: #424242;
+    text-align: center;
+}
+/* 设置导航栏购物车的间距 */
+.shopcare i{
+    margin-right: 5px;
+}
+
+/* 设置图片的样式 124 X 148
+    设置低下的字体的样式 由于导航栏设置的行高是40
+    这里需要重置一下，然后居中完事
+*/
+.app .qccode{
+    /* display: none; */
+    position: absolute;
+    left: -40px;
+    width: 124px;
+    height: 0px;
+    overflow: hidden;
+    background-color: #fff;
+    line-height: 1;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0, 0, 3);
+    /* transition 为样式设置一个过度效果*/
+    transition: height 0.5s;
+}
+/* 设置下拉框的小三角 */
+.app{
+    position: relative;
+}
+/* 或者li:hover::after 直接就能显示小三角 */
+li:hover > .app::after{   
+    content: '';
+    
+/* 设置小三角的定位 */
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 10px solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;  
+}
+.app:hover .qccode
+{
+    /* display: block; */
+    height: 148px;
+}
+/* 设置图片的样式 */
+.qccode img{
+    width: 90px;
+    height: 90px;
+    margin: 17px 17px;
+}
+/* 设置图片字体的的样式 */
+.qccode span{
+    color: rgb(0, 0, 3);
+    font-size: 13px;
+}

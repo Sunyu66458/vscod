@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            行内元素的盒子模型
+               行内元素不支持设置宽度和高度 
+               行内元素可以设置padding但是垂直方面的padding不会影响到页面的布局
+               行内元素可以设置border但是垂直方面的border不会影响到页面的布局
+               行内元素可以设置maigin但是垂直方面的maigin不会影响到页面的布局
+
+        */
+        .box{
+            width: 100px;
+            height: 300px;
+            background-color: yellow;
+            
+        }
+        .sp{
+            width: 100px;
+            height: 200px;
+            background-color: yellowgreen;
+            margin-bottom: 100px;
+            display: block;
+            /*visibility: hidden;*/
+        }
+        /*
+        display设置元素显示的内容
+            可选值
+            inline将元素设置为行内元素
+            block将元素设置为块元素
+            inline-block将元素设置为行内块元素，既可以设置宽高，也不会独占一行
+            行内元素不支持设置 可以吧行内元素改为块元素
+            none 元素不在网页里面显示
+            visiblity用来设置元素的显示状态
+                可选元素
+                visible 默认值
+                hidden 元素在页面中隐藏不显示，但是依然占据页面位置
+        */
+        
+    </style>
+</head>
+<body>
+    <span class=" sp">你好 你好</span>
+    <span>我是一个span</span>
+    <div class="box"></div>
+</body>
+</html>

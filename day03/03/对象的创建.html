@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 创建重复的对象
+        /**
+         * 工厂方法创建对象
+         * 使用工厂方法创建的对象，使用的构造函数都是object
+         * 所以创建的对象都是object这个类型
+         * 就导致我们无法区分出多种不同类型的对象
+         */
+        var  obj =  {
+            name:"孙悟空",
+            age : 18,
+            sayname:function(){
+                document.write(this.name);
+            }
+        }
+       
+       obj.sayname();
+
+       function creatPerson(name,age){
+            var obj2 = new Object();
+            obj2.name = name;
+            obj2.age = age;
+            obj2.sayname = function(){
+                alert(this.name);
+            };
+
+            return obj2;
+        }
+
+        function creatDog(name,age){
+            var obj2 = new Object();
+            obj2.name = name;
+            obj2.age = age;
+            obj2.sayname = function(){
+                alert("汪汪");
+            };
+
+            return obj2;
+        }
+
+        var dog = creatDog("旺财",3);
+        dog.sayname();
+
+
+       var obj3 = creatPerson("猪八戒",20);
+       obj3.sayname();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

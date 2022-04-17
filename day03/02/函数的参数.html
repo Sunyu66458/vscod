@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //函数的实参可以是任意的参数
+        var a = parseInt(prompt("请输入一个数"));
+        var b = parseInt(prompt("请输入一个数"));
+        //调用函数解析器不会检查实参的类型
+        //解析器也不会检查实参的数量，多余的不会赋值
+        //如果实参的数量少于形参的数量，则没有对应实参的形参是undefined
+        function sum(i,j){
+            
+            document.write("这两个数的和是：" +(i+j));
+        }
+        sum(a,b,a);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

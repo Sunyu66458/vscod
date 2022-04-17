@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+            /* 轮廓 用来设置元素的轮廓线
+                outline 和border用法差不多
+                不同点是outline不会影响可见框的大小
+
+            */
+            /* border: 10px solid red; */
+            /* outline: 10px solid red; */
+
+            
+            /* box-shadow用来设置元素的阴影效果
+                阴影不会影响页面的布局
+                默认在元素的正下方
+                第一个值  能设置向左或者向右的偏移量 正直向右偏移量，负值向左偏移
+                第二个值  还能这只上下的偏移量，政治向下偏移，负值向上偏移
+                第三个值  模糊的颜色
+                第四个值 阴影的颜色
+
+            */
+            box-shadow:0px 0px 10px rgb(235, 158, 171);
+
+            /* border-radius 设置圆角
+            能指定四个值 顺时针
+            
+            */
+            /* border-radius:10px 20px 30px 40px; */
+
+            /* 设置这样的值是椭圆型的 */
+            border-radius: 20px/40px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <span>hello</span>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*
+			 *元素选择器
+			 */
+			p{
+				color: burlywood;
+			}
+			h1{
+				color: #0000FF;
+			}
+			/*
+			 * id选择器
+			 * #id属性值{}
+			 */
+			#p1{
+				font-size: 30px;
+			}
+			/*
+			 * 类选择器
+			 *  通过元素的class属性值选中一组元素
+			 * 语法：
+			 * 	.class属性值{}
+			 */	
+			 .p2{
+			 	color: yellow;
+			 	font-size: 50px;
+			 }	
+			 .p3{
+			 	font-size: 30px;			 	
+			 }
+			 /*
+			  * 为id为p1的元素，class为p2的元素，还有h1，同时设置一个背景颜色为黄色
+			  * 可以使用选择器分组
+			  * - 通过选择器分组可以同时选中多个选择器对应的元素
+			  * - 语法：选择器1，选择器2，选择器n{}
+			  * *选择页面中的所有元素
+			  * *{}
+			  */
+			 #p1, .p2, h1{
+			 	background-color: blue;
+			 }
+			 
+			 /*
+			  * 复合选择器
+			  * - 作用
+			  * 	- 可以选中同时满足多个选择器的元素
+			  * - 语法
+			  * 	-选择器1选择器2选择器3
+			  */
+			 span.p3{
+			 	background-color: aqua;
+			 }
+			 
+		</style>
+	</head>
+	<body>
+		<h1><center>周杰伦</center></h1>
+		<p>你好 你好 你好</p>
+		<p id="p1">你好 你好 你好</p>
+		
+		<!--
+        	作者：offline
+        	时间：2021-08-13
+        	描述：我们可以为元素设置class属性
+        	class属性和id属性，只不过class属性可以重复
+        	拥有相同class属性值的元素，我们称为一组元素
+        	一个元素可以设置多个class属性，多个属性使用空格隔开
+        -->
+		
+		<p class="p2 p3">你好 你好 你好</p>
+		<p class="p2">你好 你好 你好</p>
+		<p class="p2">你好 你好 你好</p>
+		
+		<p>你好 你好 你好</p>
+		<p>你好 你好 你好</p>
+		<p>你好 你好 你好</p>
+		<p>你好 你好 你好</p>
+		<span class="p3"> 你好 你好 你好</span>
+		<p>你好 你好 你好</p>
+		<p>你好 你好 你好</p>
+	</body>
+</html>

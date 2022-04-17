@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <style>
+        body{
+            background-image: url("../../img/7.jpg");
+        }
+        .box1{
+            width: 100%;
+        }
+        .top-bar::after,
+        .top-bar::before{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .top-bar{
+            width: 1200px;
+            line-height: 30px;
+            background-color: rgb(212, 208, 208);
+            margin: 0 auto;
+            
+        }
+        .top-bar a,.top-bar span{
+            color: rgb(139, 132, 132);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .top-bar a:hover,
+        .top-bar a.highlight{
+
+            color: red;
+        }
+        .city{
+            /* border: 1px solid red; */
+            /* border-bottom: none; */
+            padding-bottom: 1px;
+            position: absolute;
+            z-index: 9999;
+        }
+        .city:hover{
+            background-color: white;
+        }
+        .top-left:hover .citylist{
+            
+            display: block;
+        }
+        .citylist{
+            display: none;
+            width: 400px;
+            height: 500px;
+            /* border: 1px solid red; */
+            background-color: white;
+            position: absolute;
+            top: 30px;
+            z-index: 999;
+        }
+        .top-left{
+            float: left;
+        }
+        .shortcut{
+            float: right;
+        }
+        .shortcut li{
+            float: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="top-bar">
+            <div class="top-left">
+                <div class="city"><a href="#"><i class="iconfont" >&#xe61b;</i>北京</a></div>
+                <div class="citylist"></div>
+            </div>
+
+            <ul class="shortcut">
+                <li><a href="#">你好，请登录</a></li>
+                <li><a class="highlight" href="#" >免费注册</a></li>
+
+                    
+                <li><a href="#">我的订单</a></li>
+
+                <li class="line"></li>
+                <li><a href="#">我的京东</a></li>
+
+                <li class="line"></li>
+                <li><a href="#">京东会员</a></li>
+
+                <li class="line"></li>
+                <li><a class="highlight" href="#">企业采购<i class="iconfont">&#xe66c;</i>
+                </li></a>
+                    
+
+                <li class="line"></li>
+                <li><span>客户服务<i class="iconfont">&#xe66c;</i></span>
+                    
+                </li>
+                
+
+                <li class="line"></li>
+                <li><span>网站导航<i class="iconfont">&#xe66c;</i></span>
+                    
+                </li>
+
+                <li class="line"></li>
+                <li><span>手机京东</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

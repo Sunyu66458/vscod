@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /**方式一
+         * 函数function
+         *  函数是一个对象
+         *  函数中封装一些功能（代码），
+         */
+        var fun  = new Function("document.write('你好 你好');");
+        fun();
+        //这种方式基本不用
+
+        /**方式二
+         * 使用函数声明来创建一个函数
+         * 语法：
+         *      function 函数名(形参1，形参2，形参3){
+         *          语句
+         * }
+         */ 
+         function fun2(){
+            for(var i = 1;i<=5;i++){
+                document.write("*" + "<br />");
+            }
+         };
+
+         fun2();
+
+         /**
+          * 方式三
+          * 使用函数表达式来创建一个函数
+          * var 函数名 = function([形参一 ，形参二]){
+          *     语句
+          * }
+          */
+         var fun3 = function(){
+             document.write("我是匿名表达式");
+         };
+         fun3();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

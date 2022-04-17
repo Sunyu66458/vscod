@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = [1,2,2,4,5,3,1,2,1,4,5];
+
+        for(var i = 0;i <arr.length;i++){
+            
+
+            for(var j = i;j <=arr.length;j++){
+                alert("位置i是:" + i +"位置j是" +j); 
+                if(arr[i] == arr[j+1]){
+                    alert("删除的元素是：" + arr.splice(j+1,1))
+
+                }
+            }
+        }
+
+        document.write("</br >" + arr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

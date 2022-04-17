@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         /*水仙花数*/
+     var i = 100;
+     var bai = 0;
+     var shi = 0;
+     var ge = 0;
+     while(i<1000){
+       bai =parseInt(i/100);
+       
+       shi = parseInt((i%100)/10);
+      
+       ge = parseInt(i % 10);
+       
+       if(bai*bai*bai + shi*shi*shi +ge*ge*ge == i){
+           document.write("这是水仙花数，数字是" + i);
+       }
+       i++;
+     }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

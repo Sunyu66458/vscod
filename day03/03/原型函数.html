@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /**
+         * 原型Prototype
+         *  我们创建的每一个函数，解析器都会向函数中添加一个属性prototy
+         * 这个属性对应着一个对象，这个对象就是我们所谓的原型对象
+         * 如果函数作为普通函数调用prototype没有任何作用
+         * 当函数通过构造函数调用时，它所创建的对象都会有一个隐含的属性
+         * 指向该属性的原型函数
+         * 
+         * 当我们访问对象的一个属性或方法时，它会现在对象自身中寻找，如果有则直接使用
+         * 如果没有则会去原型对象中寻找，找到则直接使用
+         * 
+         * 原型对象相当与公共区域 ，所有对象都能访问到
+         * 
+         * 
+         * 
+         */
+         function MyClass(){
+
+         }
+         MyClass.prototype.a = 123;
+         var mc = new MyClass();
+         var mc2 = new MyClass();
+         console.log(MyClass.prototype);
+
+         console.log(mc2.__proto__ == MyClass.prototype);
+         mc.a = "我是mc中的a";
+         alert(mc.a);
+         alert(mc2.a);
+         
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

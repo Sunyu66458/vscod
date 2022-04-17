@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <!-- form表单 action 表示传递到的页面 method表示传递的方式 有post和get两种方式-->
+    <form action="test.html" autocomplete="off">
+        <!--  -->
+       
+           <!-- 文本框
+                数据要提交到服务器中，必须要为元素指定一个name的属性值
+                autocomplete关闭自动补全
+                readonly设置为只读 可以提交
+                disabled设置为禁用
+                autofocus获取设置表单自动获取焦点
+        -->
+           <input type="text" name="name1" value="请输入" autofocus>
+           <!-- 密码框 -->
+           <input type="password" name="passworld">
+           
+           <!-- 当选按钮
+                还必须指定一个value值，把value值传递给服务器
+        -->
+           单选按钮<input type="radio" name="select" value="a">
+           <input type="radio" name="select" value="b">
+           
+
+           多选框<input type="checkbox" name="test" value="1">
+           <input type="checkbox" name="test" value="2">
+           <input type="checkbox" name="test" value="3">
+
+           下拉列表
+           <select name="heihei" >
+               <option value="name1">选项一</option>
+               <option selected value="name2">选项二</option>
+               <option value="name3">选项三</option>
+           </select>
+       
+            <!-- 按钮 
+                submit 点击后会自动提交到服务器
+                button 普通的按钮
+                reset  重置按钮
+            -->
+                <input type="submit" value="注册">
+                <input type="button" value="提交">
+                <input type="reset" value="重置">
+    </form>
+</body>
+</html>

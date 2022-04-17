@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            float: left;
+        }
+        .box3{
+            width: 300px;
+            height: 150px;
+            background-color: violet;
+            float: right;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- clear清除浮动元素对当前元素的影响
+            left清楚左侧浮动的效果
+            right清楚右侧浮动的效果
+            both清除两侧影响最大那一侧
+        清除浮动以后，浏览器会自动为元素添加一个上外边距
+        使其不受影响
+    -->
+    <div class="box1"></div>
+    <div class="box3"></div>
+    <div class="box2"></div>
+</body>
+</html>

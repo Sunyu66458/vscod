@@ -1,0 +1,133 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 20px;
+        }
+        p:hover{
+            background-color: silver;
+            color: red;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        ul{
+            margin: 0%;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>体育</p>
+        <img src="../../img/捕获.JPG" alt="运动一下">
+        <ul>
+            <li>新闻1</li>
+            <li>新闻2</li>
+            <li>新闻3</li>
+        </ul>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        a{
+            text-decoration: none;
+        }
+        .news{
+            width: 300px;
+            height: 358px;
+            margin: 50px auto;
+            /* 设置头顶的线 */
+            border-top:1px solid rgb(226, 219, 219);
+            background-color: cornsilk;
+            
+        }
+        img{
+            width: 300px;
+            height: 150px;
+        }
+        .new-title{
+            /* 为了边框和文字一样长 讲该属性设置为行内块元素 */
+
+            display: inline-block;
+            height: 40px;
+            border-top: 1px solid red;
+            margin-top: -1px;
+            padding-top: 10px ;
+            
+        }
+        .news-img{
+            height: 150px ;
+        }
+        .new-title a{
+            /* 去除下划线 */
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .img-text{
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+            margin-top: -40px ;
+            padding-left: 17px;
+        }
+        .new-list{
+            margin-top: 15px;
+            padding-left: 15px;
+        }
+        .new-list li{
+            margin-bottom: 17px;
+        }
+        .new-list li a {
+            font-size: 14px;
+            color: black;
+        }
+        .new-list li a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <h2 class="new-title">
+            <a href="#">黄色</a>
+        </h2>
+        <div class="news-img">
+            <a href="#">
+                <img src="../../img/捕获.JPG" alt="体育运动">
+                <h3 class="img-text">一起来海滩搞黄色吧</h3>
+            </a>
+        </div>
+        <ul class="new-list">
+            <li>
+                <a href="#">这是第一条新闻</a>
+            </li>
+            <li>
+                <a href="#">这是第二条新闻</a>
+            </li>
+            <li>
+                <a href="#">这是第三条新闻</a>
+            </li>
+            <li>
+                <a href="#">这是第四条新闻</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

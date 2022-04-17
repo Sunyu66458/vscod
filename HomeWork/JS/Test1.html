@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+//         ① 写一个函数，用户输入任意两个数字的任意算术运算（简单的计算器小功能），并能弹出运算后的结果。
+// ② 写一个函数，用户输入任意两个数字的最大值，并能出弹运算后的结果。
+// ③ 写一个函数，用户输入任意三个不同数字的最大值，并能弹出运算后的结果。
+// ④ 写一个函数，用户输入一个数判断是否是素数，并返弹出回值(又叫质数，只能被1和自身整数的数)
+        function getNum() {
+            return prompt('请输入数字');
+        }
+        function count(x,y){
+            console.log(Number(x) + Number(y));
+            console.log(x - y);
+            console.log(x * y);
+            console.log(x / y);
+        }
+        function getMax(x,y){
+            console.log('这两个数的最大值是：')
+            console.log(x > y ? x : y);
+        }
+        function getNumMax(x , y , z){
+            console.log('这三个数的最大值是:' + x + y +z)
+            console.log((x > y ? x : y ) > z ?  (x > y ? x : y ) : z)
+        }
+        function getPrime(i){
+            console.log('素数')
+            if(i < 2){
+                console.log('请重新输入');
+                return;
+            }
+            for(var num = 2; num < i;num++){
+                if (i % num == 0){
+                    console.log('该数不是素数');
+                    return;
+                }
+            }
+            console.log('该数是素数');
+        }
+        getNumMax(getNum(),getNum(),getNum())
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
+
+

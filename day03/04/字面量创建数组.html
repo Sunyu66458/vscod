@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // 使用字面量创建数组
+        var arr = [1,2,4,5,9,7];
+
+        // 创建一个数组中只有一个元素10
+        arr = [10];
+
+        // 数组中的元素可以是任意的数组类型
+
+        arr=["hello",1,true,null]
+        document.write(arr);
+
+        arr[arr.length] = {name:"孙悟空"};
+
+        document.write("</br > " + arr);
+
+        // 也可以是函数
+
+        arr = [function(){alert("我是函数")},function(){alert("我是二函数")}];
+        document.write("</br > " + arr);
+        arr[1]();
+
+        // 二位数组
+        arr = [[1,2,3],[2,3,4],[3,4,5]];
+        alert(arr[1][2]);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

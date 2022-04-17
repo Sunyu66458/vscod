@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            强制类型转换
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                -类型转换主要指将其他的数据类型转换为
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                string Number Boolean
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                将其他的数据转换为String
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                方式一：
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                调用数据类型的toString（）方法
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        */
+
+        var a = 123;
+        //调用a的toString方法 Null undefined 这两个值没有toString方法
+
+        var b = a.toString();
+        console.log(typeof b);
+        console.log(typeof a.toString());
+
+        console.log(typeof a);
+        console.log(a);
+
+        /*
+            将其他的数据类型转换为Number
+            转换方式一：
+                使用NUmber()函数
+                字符串转数字
+                    1.如果是纯数字，则直接将其转换为数字
+                    2.非数字内容，转换为NAN
+                    3.如果字符串是一个空串，或者是一个全是空格的字符，转换为0
+                    4.布尔转数字
+                    true转成1
+                    false转为0
+                    5.Null转为数字为0
+                    undefined 转换为数字NaN
+
+            转换方式二：
+                -这种方法专门用来对付字符串
+                -parseInt()把一个字符串转换为一个整数
+                -parseFloat()把一个字符串转换为一个浮点数
+        */
+
+        var c = "123";
+        //将字符串转换成NUmber类型
+        c = Number(c);
+        console.log(typeof c);
+        console.log(c);
+        x = "-----------------";
+
+        d = true;
+        d = Number(d);
+        console.log(x);
+        console.log(typeof d);
+        console.log(d);
+
+        e = false;
+        e = Number(e);
+        console.log(x);
+        console.log(typeof e);
+        console.log(e);
+
+        //方式二
+        a = "123px";
+        //调用parseInt（）函数将a转换为NUmber
+        /*
+        parseInt()可以将一个字符串中的有效的整数内容去出来
+        然后转换为Number
+
+        parseFloat 可以取出字符串里的小数
+
+        对非String使用parseInt()活着parseIntFloat()
+        它会先将转换为String然后操作
+
+        */
+        a = parseInt(a);
+        a = "123.123";
+        //    a = parseInt(a);
+        a = parseFloat(a);
+        console.log(x);
+        console.log(a);
+
+
+        /*
+         其他进制 
+         16禁止 0x表示
+         8 进制 0表示
+         2进制 0b表示
+
+        */
+        //像070 这种数字，浏览器会解释的不同 有的按照10禁止解释，有的按照10禁止解释
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

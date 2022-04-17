@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bro1{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            margin-bottom: 100px;
+        }
+        .bro2{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin-top: 200px;
+        }
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            margin-bottom: 100px;
+            padding-top: 100px;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <!--垂直外边距的重叠
+        相邻的垂直外边距会发生重叠现象 谁大就重叠谁
+        兄弟元素：
+            兄弟之间相邻的垂直外边距会取较大值
+        父子元素
+          子元素的会传递给父元素
+          父子外边距的折叠会影响到整个布局 必须要进行处理
+
+
+    -->
+    <div class="bro1">1</div>
+    <div class="bro2">2</div>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>

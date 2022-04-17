@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>css样式</title>
+		<!--
+			也可以将css样式写道head的style标签里
+			 将样式表编写进style标签里，然后通过css选择器选中指定元素
+			 将样式表编写带style可以使变现与结构进一步分离
+			还可以将style编写到外部的css样式里
+		<style type="text/css">
+			p{
+				color:red;
+				font-size:40px;
+			}
+		</style>
+		-->
+		<!--
+			还可以将样式表编写到外部的css文件中，
+			然后通过link标签来将外部的css文件引入到当前页面中
+			这样外部文件中的css样式表将会应用到当前页面中
+			将css同意编写到外部的样式表中，完全使结构和表现分离，可以是样式表在不同的页面中使用
+			最大限度的使样式可以进行复用，将样式统一写在样式表中，然后通过link标签引入，
+			可以利用浏览器的缓存，加快用户访问的速度，提高了用户体验
+		-->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+	</head>
+	<body>
+		
+		
+		<p>你好 你好</p>
+		<p>你好 你好</p>
+	</body>
+</html>

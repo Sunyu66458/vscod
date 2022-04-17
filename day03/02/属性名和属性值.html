@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /**
+         * 属性名使用特殊的属性名，不能采用.的方式来操作
+         *  需要使用另一种方式：
+         *      语法.对象["属性名"] = 属性值
+         * 
+         * 属性值：对象的属性值可以是任意的数据类型
+         */
+        var obj = new Object;
+        obj.name = "孙悟空";
+        obj["123"]="我是大傻春"
+        alert(obj["123"]);
+        var n = "123";
+        alert(obj[n]);
+
+
+        var obj2 = new Object;
+        obj2.name = "猪八戒";
+        obj2.test = obj2;
+
+        alert(obj2.test.name);
+
+
+        /**
+         * in 检查该属性名是否含有在该属性中
+         */
+
+         alert("test2" in obj2);
+         alert("test" in obj2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 * 伪类专门用来表示元素的一种的特殊的状态
+			 * 比如：访问过的超链接，比如普通的超链接，比如获取焦点的文本框
+			 * 当我们需要为处在这些特殊状态的元素设置样式时，就可以使用伪类
+			 */
+			
+			/*
+			 * 为没访问过的连接设置为绿色
+			 * 正常链接
+			– a:link
+			• 访问过的链接
+			– a:visited（只能定义字体颜色）
+			• 鼠标滑过的链接
+			– a:hover
+•			 正在点击的链接
+			– a:active
+			
+			浏览器通过历史记录来判断一个连接是否被访问过
+			使用visited伪类只能设置字体的颜色
+			
+			hover active也可以为其他元素设置
+			
+			• 获取焦点
+			– :focus
+			• 指定元素前
+			– :before
+			• 指定元素后
+			– :after
+			• 选中的元素
+			– ::selection -moz-selection兼容火狐浏览器
+			
+			使用伪元素中单 的第一个特俗的样式
+			首字母
+			– ::first-letter表示首字母
+			• 首行
+			– ::first-line表示首行
+			- ::selection表示鼠标选择的区域
+
+
+			- ::before表示元素开始 （before重要，after重要）
+			- ::after表示元素最后
+
+			- :first-child选中第一个子元素
+			- :last-child选中最后一个子元素
+			- :nth-child()选中第几个子元素(n 表示选中第n个元素
+										2n或even选中偶数位的元素
+										2n+1或odd选中奇数位的元素
+										以上根据所有元素进行排序的
+			)
+			:first-of-type（同类型中排序）
+			:last-of-type
+			:nth-of-type()
+			not()否定伪类将符合条件的元素从选择器中去除
+			：before表示元素最前边的部分
+			一般befor都需要结合content这个样式一起使用
+			通过content可以向before或after的位置添加一些内容
+			 */
+			
+			/*
+			p:first-letter{
+				color: red;
+				font-size:40px ;
+			}
+			p:first-line{
+				background-color: red;
+			}
+			*/
+			p:nth-of-type(3){
+
+			}
+			p:before{
+				content: "你好你好";
+				color: red;
+				font-size: 40px;
+			}
+			P:after{
+				content: "你好你好";
+				color: red;
+			}
+			a:active{
+				background-color: red;
+			}
+				
+			
+		</style>
+	</head>
+	<body>
+		
+		<a href="http://www.baidui.com">这是一个超链接</a>
+		<br />
+		<a href="http://www.baidui<br />5421.com">这也是一个超链接</a>
+		
+		<p>这是第一行</p>
+		<p>这是第二行啊阿斯顿哇撒大撒大大伟大大苏打伟大达娃阿达打撒打撒德瓦达阿瓦达阿瓦大王啊</p>
+	</body>
+</html>

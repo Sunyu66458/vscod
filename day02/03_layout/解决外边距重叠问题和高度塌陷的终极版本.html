@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            解决高度塌陷和外边距重叠问题
+            问题描述：当子元素设置外边距距离时，会影响到父元素
+            解决方法，设置父元素的after和before伪元素，
+            首先设置为表格，然后通过clear清除对子元素的影响
+        */
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: violet;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            margin-top: 100px;
+        }
+        .box1::after,.box1::before{
+            content: '';
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

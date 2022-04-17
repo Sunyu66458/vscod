@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function MyClass(){
+
+        }
+
+        MyClass.prototype.name = "我是原型中的名字";
+        var mc =new MyClass;
+
+        //使用in检查对象中是否含有某个属性时，如果对象中没有，原型中有，也会返回true
+
+        //alert("name" in mc);
+        //可以使用这个方法来检查对象自身中是否含有该属性
+        //使用该方法只有当对象自身中含有属性时，才会返回true
+        /**
+         * 原型对象也是对象，所以它也有原型
+         * 当我们使用一个对象的属性或者方法时，会先在自身中寻找
+         *      自身中如果有，则直接使用
+         *      如果没有则去原型对象中寻找，
+         * object对象没有原型，如果object依然没有，则返回undefined
+         */
+       alert( mc.hasOwnProperty("name"));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

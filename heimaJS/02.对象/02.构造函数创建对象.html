@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        /* 
+            构造函数 ：是一种特殊的函数，主要用来初始化对象，
+            即为对象成员变量赋初始值，它总与 new 运算符一起
+            使用。我们可以把对象中一些公共的属性和方法抽取出来
+            然后封装到这个函数里面。 在 js 中，
+            使用构造函数要时要注意以下两点：
+             构造函数用于创建某一类对象，其首字母要大写
+             构造函数要和 new 一起使用才有意义
+        */
+        // function 构造函数名() {
+        //     this.属性名 = 值；
+        //     this.方法 = function() {
+
+        //     }
+        // }
+        // new  构造函数名()
+        function hero (name , type , blood , attackce) {
+            this.name = name;
+            this.type = type;
+            this.blood = blood;
+            this.attack = function(attackce){
+                console.log(attackce);
+            }
+        }
+
+        var lianpo = new hero('廉颇' ,'力量型' , '500血量' );
+        var hoyi = new hero('后裔', '射手型', '200血');
+
+        alert('这个英雄是' + lianpo.name + '类型是' + lianpo.type + '血量是：' + lianpo.blood );lianpo.attack('近战');
+        alert('这个英雄是' + hoyi.name + '类型是' + hoyi.type + '血量是：' + hoyi.blood  );hoyi.attack('远程');
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

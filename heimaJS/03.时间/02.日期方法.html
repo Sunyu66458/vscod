@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 获取当前日期必须实例化
+        var nowTime = new Date();
+        console.log(nowTime);
+        // 获取当年
+        console.log('今年是：' + nowTime.getFullYear());
+        // 获取当月(0~11)
+        console.log('本月是第' + (nowTime.getMonth()+1));
+        // 获取当天日期
+        console.log('天' + nowTime.getDate());
+        // 获取星期几(0~6)
+        console.log('星期' + (nowTime.getDay()));
+        // 获取当前小时
+        console.log('小时' + nowTime.getHours());
+        // 获取当前分钟
+        console.log('分钟' + nowTime.getMinutes());
+        // 获取当前秒数
+        console.log(' 秒数' + nowTime.getSeconds());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

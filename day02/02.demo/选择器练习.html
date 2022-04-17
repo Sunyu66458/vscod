@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            元素选择器 语法格式如下 
+        */
+        div:visited{
+            background-color: springgreen;
+            font-size: 20px;
+        }
+        /*
+            类选择器 语法格式如下
+        */
+        .type{
+            width: 300px;
+            height: 60px;
+            background-color: yellow;
+        }
+        /*
+            属性选择器，
+            作用：可以根据元素中的属性或属性值来选取指定元素
+		 * 语法：
+		 * 	[属性名]选取含有指定属性的元素
+		 *	[属性名="属性值"]选取含有指定属性值的元素 
+		 *	[属性名^="属性值"]选取含有指定属性值开头的元素 
+		 *	[属性名$="属性值"]选取含有指定属性值结尾的元素 
+		 *	[属性名*="属性值"]选取包含指定属性值结尾的元素 
+        */
+        p[title="ke"]{
+            background-color: violet;
+        }
+        p[title^="i"]{
+            background-color: turquoise;
+        }
+        p[title$="i"]{
+            background-color: tomato;
+        }
+        p[title*="ss"]{
+            background-color: teal;
+        }
+        /* 
+            a:link
+			• 访问过的链接
+			– a:visited（只能定义字体颜色）
+			• 鼠标滑过的链接
+			– a:hover
+•			 正在点击的链接
+			– a:active
+        */
+        a:link{
+            background-color: blanchedalmond;
+        }
+        a:visited{
+            background-color: brown;
+        }
+        a:hover{
+            background-color: chartreuse;
+        }
+        a:active{
+            background-color: yellow;
+        }
+        /*
+            :last-child
+				– 选择最后一个子标签
+				• :nth-child
+				– 选择指定位置的子元素
+				• :first-of-type
+				• :last-of-type
+				• :nth-of-type可以选中任意位置的子元素
+					该选择器后边可以指定一个参数，指定要选中第几个子元素
+					even 表示偶数位置的子元素
+					odd 表示奇数位置的子元素
+        */
+        p:last-child{
+            font-size: 20px;
+        }
+        p:nth-child(2){
+            font-size: 30px;
+        }
+        p:first-of-type{
+            font-size: 40px;
+        }
+        p:last-of-type{
+            font-size: 50px;
+        }
+        p:nth-of-type(3){
+            font-size: 50px;
+        }
+        /*
+            • 获取焦点
+			– :focus
+			• 指定元素前
+			– :before
+			• 指定元素后
+			– :after
+			• 选中的元素
+			– ::selection -moz-selection兼容火狐浏览器
+        */
+        p::after{
+            content: "1234560";
+            font-size: 10px;
+            color: violet;
+        }
+        p::before{
+            content: "987654321";
+            font-size: 10px;
+            color: yellow;
+        }
+        P:focus{
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">你好 你好 </a>
+    </div>
+    <div class="type">
+        <p>你好 你好</p>
+    </div>
+    <div>
+        <p title="ke">你好 你好 你好</p>
+        <p title="love">你好 你好 你好</p>
+        <p title="ikely">你好 你好 你好</p>
+        <p title="ovely">你好 你好 你好</p>
+        <p title="oss">你好 你好 你好</p>
+        <p title="osser">你好 你好 你好</p>
+        <p title="ve">你好 你好 你好</p>
+        <p title="veli">你好 你好 你好</p>
+    </div>
+    <div>
+        <p>我好难 但是我要坚持</p>
+        <p>我好难 但是我要坚持</p>
+        <p>我好难 但是我要坚持</p>
+        <p>我好难 但是我要坚持</p>
+        <p>我好难 但是我要坚持</p>
+    </div>
+    
+</body>
+</html>

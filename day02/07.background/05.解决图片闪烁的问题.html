@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 326px;
+            height: 280px;
+            background-image: url("../../img/11.jpg");
+           
+        }
+        .box1:hover{
+            background-position: 326px 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 解决图片闪烁的问题：
+            可以将小图片统一保存到一个大图片中，
+            然后通过background-position来更改响应图片的位置
+            这样就可以避免图片闪烁
+            这个技术应用的非常多，CSS-sprite 这种图我们称为雪碧图
+            雪碧图的使用步骤：
+            1.确定要使用的图标，
+            2.确定使用图标的大小
+            3.根据测量结果创建一个元素
+            4.将雪碧图设置为元素的背景图片
+            5.设置一个偏移量以显示一个正确的图片
+
+            雪碧图的特点，一次性将图片加载到页面，
+            降低请求次数，加快访问速度，提高用户体验
+    -->
+    <div class="box1">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = ["孙悟空","猪八戒","色和尚","唐僧","白骨精"]
+        /* 
+            slice()方法可从已有的数组中返回选定的元素
+
+            两个参数，开始位置的索引，结束位置的索引
+            包含开始 不会包含结束
+
+            索引可以传递一个负值，从后往前计算
+        */
+       
+       var result= arr.slice(2,3);
+       alert(arr.slice(-1));
+       alert(result);
+
+       /* 
+            splice()
+                删除数组中的指定元素，并且返回被删除的元素
+                第一个数表示开始位置的索引
+                第二个表示删除的数量
+                第三个以后：这些元素讲会自动给插入到开始位置索引的前面
+       */
+      arr.splice(0,1,"牛魔王","铁扇公主")
+      document.write()
+      document.write(arr);
+      
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

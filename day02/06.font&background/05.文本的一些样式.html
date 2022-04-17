@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* text-align文本水平对齐
+            可选值：
+                left:左对齐
+                right：右对齐
+                conter：居中对齐
+                justify:两边对齐
+        */
+        div{
+            width: 800px;
+            border: 1px red solid;
+            font-size: 50px;
+            text-align: center;
+            /* text-decoration
+                   可选值
+                   none
+                   underline:下划线
+                   line-through 删除线
+                   overline 上划线
+
+            */
+            text-decoration: underline red dotted ;
+        }
+        .box2{
+            /* white-space
+                可选值：
+                    normal可选值
+                    nowrap不换行
+                    pre保留空白
+            */
+            /* 实现文本的省略后面的三个小点点 */
+            /* white-space 对文本设置不换行
+                overflow对文本进行剪切
+                text-overflow 设置文本后面的三个小点点
+            */
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        span{
+            font-size: 20px;
+            border: 1px solid red;
+            /* vertical-align 设置元素垂直对齐的方式
+                    baseline:默认值基线对齐
+                    top顶部对齐
+                    bottom底部对齐
+                    middle中间对齐
+
+            */
+            vertical-align: top;
+        }
+        p{
+            width: 500px;
+            border: 1px red solid;
+        }
+        img{
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        离床大约<span>hello  你好 你好</span>半丈远的地方，
+        是一堵黄泥糊成的土墙，
+        因为时间过久，墙壁上裂开
+        了几丝不起眼的细长口子，
+        从这些裂纹中，隐隐约约的传来韩
+        <p><img src="../../img/捕获.JPG" alt="图片"></p>
+    </div>
+    <div class="box2">
+        是一堵黄泥糊成的土墙，
+        因为时间过久，墙壁上裂开
+        了几丝不起眼的细长口子，
+        从这些裂纹中，隐隐约约的传来韩
+    </div>
+</body>
+</html>

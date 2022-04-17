@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            在 JavaScript 中，现阶段我们可以采用三种方式创建对象（object）：
+              利用字面量创建对象
+             利用 new Object 创建对象
+             利用构造函数创建对象
+*/
+            // 利用对象的字面量创建对象{}
+            // var obj = {} 创建了一个空对象
+            /* var obj = {
+                uname : '张三',
+                sex : '男',
+                sayHi : function () {
+                    alert('大家好');
+                }
+
+            }
+            console.log(obj.uname);
+            console.log(obj['uname']);
+            obj.sayHi(); */
+        /* 
+         姓名：可可
+ 类型(type)：阿拉斯加犬
+ 年龄：5岁，
+ 颜色：棕红色。  技能：汪汪汪(bark) ，演电影 (showFilm)
+        */
+
+        var dog = {
+            uname : '可可',
+            type : '阿拉斯加',
+            year : '5岁',
+            color : '棕色',
+            skills : function () {
+                alert('汪汪汪');
+                alert('演电影');
+            }
+        }
+
+        console.log(dog.uname);
+        console.log(dog.type);
+        console.log(dog.year);
+        console.log(dog.color);
+        dog.skills();
+
+        // 利用 new Object 创建对象
+        var obj = new Object();
+        obj.uname = '张三';
+        obj.age = 18;
+        obj.sex = '男';
+        obj.sayhi = function() {
+            alert('你好  你好')
+
+        }
+
+        obj.sayhi();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

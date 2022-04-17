@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*.box{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            border-width: 10px 20px 30px;
+            border-color: black;
+            border-style: solid;(虚线，dotted，dashed 双线double 默认值是none)
+        }*/
+        .box{
+            width: 300px;
+            height: 500px;
+            background-color: bisque;
+            border: 10px yellow dotted;
+            padding-top: 50px;
+        }
+        .inner{
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        盒子模型
+        有以下几个组成
+        内容区content(width，height设置内容区大小)
+        内边距padding(四个方向 )
+        边框border(边框设置最少三个属性
+            border-width,border-color border-style
+        )
+        外边距maigin
+    -->
+    <div class="box">
+        <div class="inner"></div>
+        div
+    </div>
+</body>
+</html>

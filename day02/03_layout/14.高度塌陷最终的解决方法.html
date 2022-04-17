@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 解决方法
+            首先子div设置浮动后 父div发生塌陷
+            然后设置父div的after的伪元素选择器
+            由于伪元素选择器不是块元素 需要先把它设置为块元素
+            然后使用clear清除浮动元素对块元素的影响，即可解决塌陷问题
+        */
+        .box{
+            border: 10px solid red;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: violet;
+            float: left;
+        }
+        .box::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box2"></div>
+    </div>    
+</body>
+</html>

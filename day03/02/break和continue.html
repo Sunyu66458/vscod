@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /**
+         * 可以为循环许局创建一个label，来标识当前循环
+         * label：循环语句
+         * 用break语句时，可以在break后跟着一个label
+         * 这样break就会结束指定循环，
+         */
+        outer:
+        for(var i = 0;i < 5;i++){
+            document.write("@外层循环"+i);
+            for(var j = 0 ;j < 5;j++){
+                break outer;
+                document.write("内层循环："+j);
+            }
+        }
+
+        document.write("<br />");
+        outer:
+        for(var i = 0;i < 5;i++){
+            document.write("@外层循环"+i);
+            for(var j = 0 ;j < 5;j++){
+                continue outer;
+                document.write("内层循环："+j);
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

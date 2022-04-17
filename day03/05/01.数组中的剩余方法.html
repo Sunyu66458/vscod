@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    /**
+        concat()可以连接两个或多个数组，并返回
+        该方法不会对原数组产生影响
+
+    */
+    var  arr = ["孙悟空","猪八戒","白骨精"];
+    var  arr1 = ["玉兔精","沙和尚","白骨精"];
+
+    var result = arr.concat(arr1,"牛魔王","唐僧");
+
+    // alert(arr);
+    // alert(arr1);
+    // alert(result);
+
+    /*
+        join()
+        该方法可以将数组转换为一个字符串
+        该方法不会对原数组产生影响，并且会返回
+        在join()中可以指定一个字符串作为参数，这个字符串将会成为数组中的连接符
+        如果不指定连接符，则默认使用，作为连接符
+
+    */
+    result = arr.join("!");
+    // alert(result);
+
+    /*
+        reverse()
+            该方法用啦反转数组
+            该方法会影响原数组
+    */
+    arr.reverse();
+    // alert(arr);
+
+    /*
+        sort()
+        对数组进行排序
+        会按照Unicode编码进行排序
+        对数字进排序时，可能会得到一个错误的排序
+        我们可以来指定排序规则
+        可以在sort()添加一个回调函数，来指定排序规则
+            回调函数中需要定义两个形参
+            浏览器会分别使用数组中的元素作为实参去调用回调函数
+            使用那个元素调用不确定，但是肯定的是在数组收纳柜a一定在b前边
+        浏览器会根据回调函数的返回值来决定元素
+            如果返回一个大于0的值，则元素会交换位置
+            如果返回一个小于0的值，则元素位置不变
+            如果返回一个0，则认为两个元素相等，也不交换位置
+        升序a-b
+        降序b-a
+    */
+   arr = [1,4,2,3,5,11]
+   arr.sort(function(a,b){
+       if(a>b){
+           return -1;
+       }else if(a <b){
+           return 1;
+       }else{
+           return 0;
+       }
+   });
+   alert(arr);
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

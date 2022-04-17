@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 
+        定位(position)
+        定位是一种更加高级的定位手段
+        通过定位可以将元素摆放到任意位置
+        通过position属性来设置定位
+            可选值：
+            static	默认形为，参考文档流
+            relative	相对定位
+            absolute	绝对定位
+            fixed	固定定位
+            sticky	粘性定位
+        绝对定位:元素的position设置为fixed时开启固定定位
+        是一种特殊的绝对定位，特点和绝对定位基本上差不多
+              
+        唯一不同的是一直参考浏览器的视口进行定位
+        固定定位不会随着网页的滚动而滚动
+        例如 导航条
+
+                
+    */
+    body{
+        font-size: 60px;
+    }
+    .box1{
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+    }
+    .box2{
+        width: 200px;
+        height: 200px;
+        background-color: yellowgreen;  
+        position: fixed;
+        top: 0px;
+        right: 0;
+
+    }
+    .box3{
+        width: 200px;
+        height: 200px;
+        background-color: cornsilk;
+        /* position: relative; */
+    }
+    .box4{
+        width: 600px;
+        height: 600px;
+        background-color: cyan;
+        /* position: relative; */
+    }
+    .box5{
+        width: 400px;
+        height: 400px;
+        background-color: darkgrey;
+        /* position: relative; */
+    }
+</style>
+<body>
+    <div class="box1">1</div>
+    <div class="box4">
+        4
+        <div class="box5">
+            5
+            <div class="box2">2</div>
+        </div>
+    </div>
+    <div class="box3">3</div>
+</body>
+</html>

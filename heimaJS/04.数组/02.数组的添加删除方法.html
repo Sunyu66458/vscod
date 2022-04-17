@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // instanceof 运算符，可以判断一个对象是否属于某种类型
+        // Array.isArray()用于判断一个对象是否为数组，isArray() 是 HTML5 中提供的方法
+        var arr = [1,4,7,8,5,2];
+        console.log(arr instanceof Array);
+        console.log(Array.isArray(arr))
+
+        // 添加删除数组元素的方法
+        // push(参数1.参数2.。。。。。。。) 末尾添加一个元素或多个  返回新的长度
+        // pop() 删除数组最后一个元素，把数组长度减1                返回删除的元素
+        // unshift(参数1，参数2.。。。。。) 数组开头添加一个或者多个元素  返回新的长度
+        // shift() 删除数组的第一个元素                              返回第一个元素的值
+
+        console.log(arr.push('孙悟空', '猪八戒'));
+        console.log(arr);
+
+        console.log(arr.unshift('如来佛祖' , '观音菩萨'));
+        console.log(arr);
+
+        console.log(arr.pop());
+        console.log(arr);
+
+        console.log(arr.shift());
+        console.log(arr);
+        
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

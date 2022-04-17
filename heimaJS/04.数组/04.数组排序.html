@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // reverse() 颠倒数组元素的顺序， 返回新数组
+        // sort() 对数组的元素进行排序 返回新数组
+
+        var arr = [];
+        for(var i = 0 ;i < 10; i++){
+            arr[arr.length] = Math.floor(Math.random() * 100 + 1);
+        }
+        alert(arr.reverse());
+        alert(arr.sort());
+
+        // indexOf() 数组中查找给定元素的第一个索引  存在返回索引号，不存在返回-1
+        // lastindexOf() 在数组中的最后一个的索引， 存在返回索引号，不存在返回-1
+
+        console.log(arr.indexOf(arr[0]));
+        console.log(arr.lastIndexOf(arr[0]));
+
+        // 有一个数组[‘c’, ‘a’, ‘z’, ‘a’, ‘x’, ‘a’, ‘x’, ‘c’, ‘b’]，要求去除数组中重复的元素。
+        var arr1 = ['c', 'a', 'z','b', 'a', 'x', 'a', 'x','c', 'b'];
+        
+        var arr2 = [];
+        for(var i = 0; i < arr1.length; i++){
+            if(arr2.indexOf(arr1[i]) == -1){
+                arr2.push(arr1[i]);            
+            }
+        }
+        console.log(arr1);
+        console.log(arr2);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

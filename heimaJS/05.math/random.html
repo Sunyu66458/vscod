@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+//         ① 随机生成一个1~10 的整数 我们需要用到 Math.random() 方法。
+// ② 需要一直猜到正确为止，所以一直循环。
+// ③ 用while 循环合适更简单。
+// ④ 核心算法：使用 if else if 多分支语句来判断大于、小于、等于。
+        function getRandom(){
+            var num = Math.floor(Math.random() * 10 + 1);
+            alert(num);
+            while(true) {
+                var getNum = prompt('请输入数字');
+                if (num == getNum) {
+                    alert('恭喜您 猜对了');
+                    console.log('您猜对了');
+                    return ;
+                }else{
+                    num > getNum ? alert('您猜小了请继续') : alert('您菜大了请继续');
+                }
+                
+            }
+        }
+
+        getRandom();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

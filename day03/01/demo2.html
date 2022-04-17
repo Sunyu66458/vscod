@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--
+        js代码的三种方式，
+        1.直接写到代码的内部
+        2.写道script的标签里面
+        3.写到外部文件里面。然后引用
+    -->
+
+
+    <!--
+        可以将js代码编写到外部js文件中，然后通过script标签引入
+        写道外部文件中可以在不同的页面中同时引用
+    -->
+    <!--
+        script标签一旦用于引用外部文件，就不能在编写代码了
+    -->
+    <script type="text/javascript" src="../js/script.js">
+        alert("我是内部的js");
+    </script>
+
+    <!-- 可以将js写道script标签
+        <script type="text/javascript">
+        alert("我是标签里面的代码")
+    </script> -->
+</head>
+<body>
+    <!--
+        可以将js代码编写到标签onclick属性中
+        当我们点击按钮时，js代码才会执行 这种方式用的少 不方便维护
+    -->
+    <button onclick="alert('点我干嘛')">点我一下</button>
+    <a href="javascript:alert('让你点你就点');">点一下</a>
+    <a href="javascript:;">空连接</a>
+    <!--
+        上面两种方式都实现了 点击弹出一个提示的效果
+    -->
+    
+</body>
+</html>

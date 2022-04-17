@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            prompt()可以弹出一个提示框，该提示框中会带有一个文本框
+            该函数需要一个字符串作为参数
+            该字符串会作为提示框的提示文字
+            用户输入的数值会作为返回值返回
+        */
+        var score = Number(prompt("请输入成绩"));
+        document.write(typeof(score));
+        document.write(score);
+        if (score>90){
+            alert("奖励宝马");
+        }
+        else if(score >= 80){
+            alert("奖励一万");
+        }
+        else if(score >= 60){
+            alert("奖励嫖娼");
+        }else{
+            alert("奖励个屁");
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
